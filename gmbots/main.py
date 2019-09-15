@@ -9,7 +9,7 @@ class Bot:
         self.slug = slug
         self.token = token
 
-    def get(self, params: dict = {}):
+    def get(self, endpoint: str, params: dict = {}):
         """
         Make a GET request to the API.
 
@@ -29,4 +29,4 @@ class Bot:
         """
         Given a group ID, get the ID of the bot (instance) in that group.
         """
-        return self.get(f"bot/{self.slug}/{group_id}")
+        return self.get(f"bot/{self.slug}/instance/{group_id}")
