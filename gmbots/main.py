@@ -10,7 +10,7 @@ class Instance:
 
 
 class Bot:
-    _HOST = "http://localhost:5000"
+    _HOST = "https://mebotsco.herokuapp.com"
     _API_ROOT = "/api/"
 
     def __init__(self, slug: str, token: str):
