@@ -33,7 +33,7 @@ class Bot:
         else:
             raise Exception("API request failed. Received:\n" + request.text)
 
-    def get_instance(self, group_id: int) -> str:
+    def instance(self, group_id: int) -> str:
         """
         Given a group ID, get the ID of the bot (instance) in that group.
         """
