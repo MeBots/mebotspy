@@ -9,5 +9,5 @@ setup(name='mebots',
       author='Erik Boesen',
       author_email='me@erikboesen.com',
       license='GPL',
-      packages=['gmbots'],
+      packages=['mebots'],
       install_requires=['requests'])
