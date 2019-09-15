@@ -1,6 +1,14 @@
 import requests
 
 
+class Instance:
+    def __init__(self, raw):
+        self.id = raw["id"]
+
+    def __repr__(self):
+        return "<" + self.__class__.__name__ + ":" + self.id + ">"
+
+
 class Bot:
     _HOST = "http://localhost:5000"
     _API_ROOT = "/api/"
@@ -29,4 +37,4 @@ class Bot:
         """
         Given a group ID, get the ID of the bot (instance) in that group.
         """
-        return self.get(f"bot/{self.slug}/instance/{group_id}")
+        return Instance(self.get(f"bot/{self.slug}/instance/{group_id}"))
