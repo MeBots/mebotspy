@@ -20,8 +20,8 @@ import mebots
 To create a new bot object:
 
 ```py
-bot = mebots.Bot('your_bot_shortname', 'your API key here')
-# You may wish to store your API key in a config file or environment variable
+bot = mebots.Bot('your_bot_shortname', 'bot token (from edit page)')
+# You may wish to store your token in a config file or environment variable
 ```
 
 You can obtain your API key as described [here]().
