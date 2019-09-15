@@ -2,9 +2,12 @@ import requests
 
 
 class Bot:
-    def __init__(self, slug: str, api_key: str):
+    _HOST = "http://localhost:5000"
+    _API_ROOT = "/api/"
+
+    def __init__(self, slug: str, token: str):
         self.slug = slug
-        self.api_key = api_key
+        self.token = token
 
     def get(self, params: dict = {}):
         """
@@ -13,11 +16,17 @@ class Bot:
         :param params: dictionary of custom params to add to request.
         """
         params.update({
-            'apikey': self.api_key,
+            "token": self.token,
         })
-        request = requests.get(self.API_TARGET, params=params)
+        request = requests.get(self._HOST + self._API_ROOT + endpoint,
+                               params=params)
         if request.ok:
             return request.json()
         else:
-            # TODO: Can we be more helpful?
-            raise Exception('API request failed. Received:\n' + request.text)
+            raise Exception("API request failed. Received:\n" + request.text)
+
+    def get_instance(self, group_id: int) -> str:
+        """
+        Given a group ID, get the ID of the bot (instance) in that group.
+        """
+        return self.get(f"bot/{self.slug}/{group_id}")
