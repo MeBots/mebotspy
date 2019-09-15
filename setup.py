@@ -2,10 +2,10 @@
 
 from setuptools import setup
 
-setup(name='gmbots',
+setup(name='mebots',
       version='0.1.4',
-      description='Library for interacting with the GMBots hosted GroupMe bot toolkit.',
-      url='https://github.com/ErikBoesen/gmbotspy',
+      description='Library for running GroupMe bots with the MeBots API toolkit.',
+      url='https://github.com/ErikBoesen/python-mebots',
       author='Erik Boesen',
       author_email='me@erikboesen.com',
       license='GPL',
