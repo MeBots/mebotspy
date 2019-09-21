@@ -1,4 +1,4 @@
-# mebots [![PyPI version](https://badge.fury.io/py/gmbots.svg)](https://badge.fury.io/py/gmbots)
+# mebots [![PyPI version](https://badge.fury.io/py/mebots.svg)](https://badge.fury.io/py/mebots)
 
 > Python library for interfacing with the MeBots API.
 
