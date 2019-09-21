@@ -27,9 +27,9 @@ bot = mebots.Bot('your_bot_shortname', 'bot token (from edit page)')
 You can obtain your API key as described [here]().
 
 ## Retrieval Functions
-- TODO
+`Bot.instance(group_id)` will get information on the instance of your bot that is in a given group. It returns an `Instance` object, which has the property `id`. That string can be passed to the GroupMe API when sending a message as described [here](https://dev.groupme.com/docs/v3#bots_post).
 
-See `example.py` for several usage examples.
+See `example.py` for a complete usage example.
 
 ## Author
 [Erik Boesen](https://github.com/ErikBoesen)
