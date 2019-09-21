@@ -2,7 +2,7 @@
 
 > Python library for interfacing with the MeBots API.
 
-[API documentation](https://developers.yale.edu/courses)
+[API documentation](http://mebots.co/documentation)
 
 ## Setup
 First, install the module:
