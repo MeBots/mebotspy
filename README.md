@@ -31,6 +31,8 @@ You can obtain your API key as described [here]().
 
 See `example.py` for a complete usage example.
 
+See [this repository](https://github.com/ErikBoesen/mebots-example-python) for an example of a fully-functioning bot in Python using MeBots.
+
 ## Author
 [Erik Boesen](https://github.com/ErikBoesen)
 
