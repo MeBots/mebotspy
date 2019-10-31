@@ -5,7 +5,7 @@ from setuptools import setup
 setup(name='mebots',
       version='0.1.0',
       description='Library for running GroupMe bots with the MeBots API toolkit.',
-      url='https://github.com/ErikBoesen/mebots.py',
+      url='https://github.com/MeBots/mebotspy',
       author='Erik Boesen',
       author_email='me@erikboesen.com',
       license='GPL',
