@@ -4,6 +4,7 @@ import requests
 class Instance:
     def __init__(self, raw):
         self.id = raw["id"]
+        self.token = raw.get("token")
 
     def __repr__(self):
         return "<" + self.__class__.__name__ + ":" + self.id + ">"
