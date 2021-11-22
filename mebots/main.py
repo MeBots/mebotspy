@@ -34,8 +34,11 @@ class Bot:
         else:
             raise Exception("API request failed. Received:\n" + request.text)
 
-    def instance(self, group_id: int) -> str:
+    def instances(self):
+        return [Instance(raw) for raw in self.get("bots/{self.slug}/instances")
+
+    def instance(self, group_id: int):
         """
         Given a group ID, get the ID of the bot (instance) in that group.
         """
-        return Instance(self.get(f"bot/{self.slug}/instance/{group_id}"))
+        return Instance(self.get(f"bots/{self.slug}/instances/{group_id}"))
