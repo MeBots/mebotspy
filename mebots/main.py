@@ -35,7 +35,7 @@ class Bot:
             raise Exception("API request failed. Received:\n" + request.text)
 
     def instances(self):
-        return [Instance(raw) for raw in self.get("bots/{self.slug}/instances")]
+        return [Instance(raw) for raw in self.get(f"bots/{self.slug}/instances")]
 
     def instance(self, group_id: int):
         """
