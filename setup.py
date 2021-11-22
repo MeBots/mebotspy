@@ -3,7 +3,7 @@
 from setuptools import setup
 
 setup(name='mebots',
-      version='0.3.1',
+      version='0.3.2',
       description='Library for running GroupMe bots with the MeBots API toolkit.',
       url='https://github.com/MeBots/mebotspy',
       author='Erik Boesen',
