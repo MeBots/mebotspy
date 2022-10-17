@@ -8,6 +8,6 @@ setup(name='mebots',
       url='https://github.com/MeBots/mebotspy',
       author='Erik Boesen',
       author_email='me@erikboesen.com',
-      license='GPL',
+      license='MIT',
       packages=['mebots'],
       install_requires=['requests'])
